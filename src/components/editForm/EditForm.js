@@ -18,7 +18,7 @@ let AddForm = ({editClose,formData,popClose})=>{
     }
     let handleSubmit = e =>{
         e.preventDefault();
-        axios.patch(`http://127.0.0.1:8000/api/update/${formData.id}/`,{
+        axios.patch(`https://crabs-todo.herokuapp.com/api/update/${formData.id}/`,{
             title:form.title,
             description:form.description
         })
