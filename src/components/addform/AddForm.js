@@ -28,7 +28,7 @@ let AddForm = ({popClose})=>{
             return errors
         },
         onSubmit:values=>{
-            axios.post('http://127.0.0.1:8000/api/add/',values)
+            axios.post('https://crabs-todo.herokuapp.com/api/add/',values)
             .then(res=>popClose())
             .catch(err=>console.log(err))
         }
