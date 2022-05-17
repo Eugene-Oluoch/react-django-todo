@@ -1,0 +1,48 @@
+.todo {
+    margin-block: .5rem;
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.todo-title {
+    color: #707070;
+    padding-left: 1rem;
+}
+
+.todo-images {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.todo-images img {
+    cursor: pointer;
+}
+
+.todo-images-edit {
+    padding-right: .2rem;
+}
+
+.todo-images-edit img {
+    height: 1.5rem;
+    transition: .3s ease-in-out;
+}
+
+.todo-images-edit img:hover {
+    transform: translateY(-0.1rem);
+    transition: .3s ease-in-out;
+}
+
+.todo-images-bin img {
+    height: 1rem;
+    transition: .3s ease-in-out;
+}
+
+.todo-images-bin img:hover {
+    transform: translateY(-0.1rem);
+    transition: .3s ease-in-out;
+}

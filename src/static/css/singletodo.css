@@ -1,0 +1,105 @@
+.single {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(hsla(267, 73%, 71%, 0.8), hsla(267, 73%, 71%, 0.8));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+.single-container {
+    position: relative;
+    background-color: white;
+    width: 95%;
+    max-width: 400px;
+    border-radius: .5rem;
+    min-height: 250px;
+}
+
+.single-title {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #B5B5B5;
+}
+
+.single-title-image img {
+    cursor: pointer;
+    display: block;
+    height: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.single-title-image img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 .2rem .1rem hsl(0, 0%, 75%);
+    transition: 0.3s ease-in-out;
+}
+
+.single-title-heading {
+    font-size: .7rem;
+}
+
+.single-context {
+    min-height: 165px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-context-image img {
+    height: 2rem;
+    display: block;
+    margin-right: .4rem;
+}
+
+.single-buttons {
+    padding: .5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.single-buttons button {
+    cursor: pointer;
+    height: 1.5rem;
+    padding: 0 .5rem;
+    border-radius: .2rem;
+}
+
+.single-buttons-update {
+    background-color: #CFE2FF;
+    border: 1px solid #CFE2FF;
+    color: #1D53A3;
+    margin-right: .3rem;
+    transition: .3s ease-in-out;
+}
+
+.single-buttons-update:hover {
+    background-color: hsl(216, 100%, 81%);
+    color: hsl(216, 70%, 48%);
+    transition: .3s ease-in-out;
+    transform: translateY(-0.15rem);
+    box-shadow: 0 .2rem .2rem hsl(0, 0%, 90%);
+}
+
+.single-buttons-delete {
+    background-color: #F8D7DA;
+    border: 1px solid #F8D7DA;
+    color: #842029;
+    transition: .3s ease-in-out;
+}
+
+.single-buttons-delete:hover {
+    background-color: hsl(355, 70%, 81%);
+    color: hsl(355, 61%, 42%);
+    transition: .3s ease-in-out;
+    transform: translateY(-0.15rem);
+    box-shadow: 0 .2rem .2rem hsl(0, 0%, 90%);
+}

@@ -1,0 +1,61 @@
+.todos {
+    position: relative;
+    border-radius: .5rem;
+    min-height: 200px;
+    box-shadow: 0 0 .5rem .2rem hsl(0, 0%, 95%);
+}
+
+.todos-container {
+    padding: 1.5rem 0;
+}
+
+.todos-container-no {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+.todos-container-no-p {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.todos-create {
+    position: absolute;
+    bottom: -1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-create-button {
+    cursor: pointer;
+    border-radius: .5rem;
+    height: 2.5rem;
+    padding: .3rem .5rem;
+    width: 8rem;
+    background-color: #AF7EEB;
+    border: 1px solid #AF7EEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.todos-create-button img {
+    height: .7rem;
+    display: block;
+    margin-right: .3rem;
+}
+
+.todos-create-button:hover {
+    background-color: hsl(267, 73%, 61%);
+    transition: .3s ease-in-out;
+    transform: translateY(-0.15rem);
+    box-shadow: 0 .4rem .2rem hsl(0, 0%, 90%);
+}
