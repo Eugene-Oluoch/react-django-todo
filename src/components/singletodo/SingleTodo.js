@@ -21,7 +21,7 @@ let SingleTodo = ({popClose,editUp,Data})=>{
 
     let Delete = ()=>{
         if(confirm("Do you want to delete? ")){
-            axios.delete(`http://127.0.0.1:8000/api/delete/${Data.id}`)
+            axios.delete(`https://crabs-todo.herokuapp.com/api/delete/${Data.id}`)
             .then(res=>{
                 popClose()
                 notifydelete()

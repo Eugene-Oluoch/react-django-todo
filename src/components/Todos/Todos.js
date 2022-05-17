@@ -12,7 +12,7 @@ let Todos = ({Popup,SingleUp,Singledata,OpenDelete,DeleteCheck,ConfirmDelete})=>
     let [todos, useTodos] = useState([]);
 
     useEffect(()=>{
-        axios.get('http://127.0.0.1:8000/api/all/')
+        axios.get('https://crabs-todo.herokuapp.com/api/all/')
         .then(res=>{
             useTodos(res.data)
         })
