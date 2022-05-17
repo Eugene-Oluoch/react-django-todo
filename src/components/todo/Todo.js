@@ -53,7 +53,7 @@ let Todo = ({Title,singleUp,SingleData,openDelete,deleteCheck,confirmDelete})=>{
 
 
     let Delete = (id)=>{
-            axios.delete(`http://127.0.0.1:8000/api/delete/${id}/`)
+            axios.delete(`https://crabs-todo.herokuapp.com/api/delete/${id}/`)
             .then(res=>{
                 notifyDelete()
                 confirmDelete(false)
